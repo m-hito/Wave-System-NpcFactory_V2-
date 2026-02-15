@@ -53,9 +53,7 @@ function NPCfactory.new(id, NpcType, humanoid, model, targetPos) -- we have buil
 		self.MovementSystem = MovementSystem.new(humanoid, Vector3.new(-100, 0, 0), {Npc_Type = NpcType})
 		self.NpcCounter += 1
 	end
-	
 
-	print(self.NpcCounter)
 	return self 
 
 end -- add behaviours 
@@ -65,10 +63,10 @@ function NPCfactory:GiveTool(npc, tool)
 	Tool.Parent = workspace
 	Tool.Name = tool.Name
 	
-	print(Tool.Name)
+	--print(Tool.Name)
 	
 	npc.Humanoid:EquipTool(Tool)
-	print("gave tool")
+	--print("gave tool")
 
 end
 
@@ -81,9 +79,6 @@ function NPCfactory.spawner(template, id, NpcType, tool, spawnPos: CFrame, waveN
 	end
 
 	local waveFolderName = "Wave_" .. waveNpc
-
-	--print("template passed:", template, id, NpcType)
-	--print("Tool passed:", tool, id)
 
 	local model = template:Clone()
 	local humanoid = model:FindFirstChild("Humanoid")
