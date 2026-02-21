@@ -12,9 +12,12 @@ ReplicatedStorage
             └── Movement (Modulescript 📓)
             └── NPCFactory (Modulescript 📓)
             └── WaveeManager (Modulescript 📓) 
+            └── PlayerData (Modulescript 📓)
+            └── GameState (Modulescript 📓)
+
 
 ServerScriptService
-        └── WaveeManager ( Serverscript 📃)
+        └── WaveSpawner ( Serverscript 📃)
 ```
 
 Make your own ui logic, it is easy. Integrate it with wave system
